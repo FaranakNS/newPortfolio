@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1e1e1e;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Home Section */
+#home {
+    background: #333;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background: #222;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background: #333;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: #444;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    background: #222;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 45%;
+    text-align: left;
+}
+
+.bar {
+    background: #555;
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.js-progress {
+    width: 80%;
+    background: #f39c12;
+}
+
+.react-progress {
+    width: 70%;
+    background: #61dafb;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #333;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
