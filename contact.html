@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Farah Portfolio</title>
+
+    <!-- (optional) global stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* ◾️ Shared theme variables (identical to education.html) */
+      :root {
+        --brand: #ff6b00; /* accent orange                       */
+        --text: #333333; /* primary body text                   */
+        --surface: #ffffff; /* banner / card background            */
+        --page: #f3f3f3; /* overall page background             */
+      }
+
+      /* ◾️ Base styles */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: var(--page);
+        color: var(--text);
+      }
+
+      /* ◾️ Banner */
+      .banner {
+        background: var(--surface);
+        padding: 1.25rem 2rem;
+        border-bottom: 4px solid var(--brand);
+      }
+      .banner h1 {
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: var(--brand);
+      }
+
+      /* ◾️ Contact list */
+      /* ◾️ Contact list */
+      .contact-wrapper {
+        max-width: 600px; /* keep an optional width cap */
+        margin: 2.5rem 0 2.5rem 2rem; /* ⬅️ left-aligned: remove auto centering */
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+      /* circular brand-coloured icon holder */
+      .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: var(--brand);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .icon-circle img {
+        width: 28px;
+        height: 28px;
+        filter: invert(1);
+      }
+      /* link / text styling */
+      .contact-text {
+        font-size: 1.25rem;
+        word-break: break-all;
+      }
+      .contact-text a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .contact-text a:hover {
+        opacity: 0.75;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="banner">
+      <h1>Contact</h1>
+    </header>
+
+    <main class="contact-wrapper">
+      <!-- Phone -->
+      <div class="contact-item">
+        <span class="icon-circle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/phone.svg"
+            alt=""
+          />
+        </span>
+        <span class="contact-text">+1&nbsp;780&nbsp;802&nbsp;6276</span>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-item">
+        <span class="icon-circle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mail.svg"
+            alt=""
+          />
+        </span>
+        <span class="contact-text">
+          <a href="mailto:zamaniali1995@gmail.com">nasoorifarah@gmail.com</a>
+        </span>
+      </div>
+
+      <!-- GitHub -->
+      <div class="contact-item">
+        <span class="icon-circle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+            alt=""
+          />
+        </span>
+        <span class="contact-text">
+          <a href="https://github.com/zamaniali1995" target="_blank"
+            >https://github.com/FaranakNS</a
+          >
+        </span>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-item">
+        <span class="icon-circle">
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+            alt=""
+          />
+        </span>
+        <span class="contact-text">
+          <a href="https://linkedin.com/in/zamaniali1995" target="_blank"
+            >linkedin.com/in/faranak-nasoori/</a
+          >
+        </span>
+      </div>
+    </main>
+  </body>
+</html>

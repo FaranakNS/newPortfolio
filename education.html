@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education | Farah Portfolio</title>
+
+    <!-- (optional) global stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* ◾️ Theme palette ─ tweak here anytime */
+      :root {
+        --brand: #ff6b00; /* warm accent orange                       */
+        --text: #333333; /* primary body text                        */
+        --surface: #ffffff; /* cards / banner background                */
+        --page: #f3f3f3; /* overall page background                  */
+        --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+
+      /* ◾️ Base */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: var(--page);
+        color: var(--text);
+      }
+
+      /* ◾️ Banner */
+      .banner {
+        background: var(--surface);
+        padding: 1.25rem 2rem;
+        border-bottom: 4px solid var(--brand); /* orange accent line */
+      }
+      .banner h1 {
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: var(--brand); /* brand-coloured title */
+      }
+
+      /* ◾️ Grid wrapper */
+      .edu-wrapper {
+        max-width: 1400px;
+        margin: 2rem auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+        padding: 0 1rem;
+      }
+
+      /* ◾️ Cards */
+      .edu-card {
+        background: var(--surface);
+        padding: 2rem;
+        border-left: 6px solid var(--brand); /* orange card stripe */
+        border-radius: 0.25rem;
+        box-shadow: var(--shadow);
+      }
+      .edu-card h2 {
+        margin: 0 0 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--brand);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .edu-card p {
+        margin: 0.25rem 0;
+        font-size: 1.05rem;
+      }
+      .degree-label {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="banner">
+      <h1>Education</h1>
+    </header>
+
+    <main class="edu-wrapper">
+      <article class="edu-card">
+        <h2>Northern Alberta Institute of Technology (NAIT)</h2>
+        <p>Edmonton, AB, Canada</p>
+        <p>
+          <span class="degree-label">Degree:</span> Bachelor of Applied
+          Information Systems Technology - Information Systems
+        </p>
+      </article>
+
+      <article class="edu-card">
+        <h2>Northern Alberta Institute of Technology (NAIT)</h2>
+        <p>Edmonton, AB, Canada</p>
+        <p>
+          <span class="degree-label">Diploma:</span> Computer Software
+          Development
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
